@@ -1,10 +1,9 @@
 import React from 'react'
 
-
-function Home() {
+function HowStart() {
   return (
     <>
- 
+      <>
   {/* Page Content START */}
   <div className="page-content">
     {/* Main Nav START */}
@@ -24,7 +23,7 @@ function Home() {
             </div>
             <div className="nav-wrap">
               <ul id="nav" className="nav-wrap__list menu">
-                <li className="current">
+                <li>
                   <a href="/" title="Главная">
                     Главная
                   </a>
@@ -103,148 +102,85 @@ function Home() {
     </nav>
     {/* Main Nav END */}
     {/* Home Section START */}
-    <section id="home-sec" className="main-banner parallax">
-      <div className="bg-lefts" />
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-9">
-            {/* Swiper */}
-            <div className="swiper-container">
-              <div className="swiper-wrapper">
-                <div className="swiper-slide" data-hash="slide1">
-                  <div className="col-md-6">
-                    <span className="img-ste1" />
-                  </div>
-                  <div className="col-md-6">
-                    <h3 className="name-intro">PUBG</h3>
-                    <span className="hr-intro" />
-                    <p className="docopation-intro">
-                      Встречайте новая мини-игра <br />
-                      PUBG теперь и в майнкрафте.
-                    </p>
-                    <a href="#" className="btn-drop">
-                      <span className="ic-sx22" /> Подробнее
-                    </a>
-                  </div>
-                </div>
-                <div className="swiper-slide" data-hash="slide2">
-                  <div className="col-md-6">
-                    <span className="img-ste1" />
-                  </div>
-                  <div className="col-md-6">
-                    <h3 className="name-intro">PUBG</h3>
-                    <span className="hr-intro" />
-                    <p className="docopation-intro">
-                      Встречайте новая мини-игра <br />
-                      PUBG теперь и в майнкрафте.
-                    </p>
-                    <a href="#" className="btn-drop">
-                      <span className="ic-sx22" /> Подробнее
-                    </a>
-                  </div>
-                </div>
-                <div className="swiper-slide" data-hash="slide3">
-                  <div className="col-md-6">
-                    <span className="img-ste1" />
-                  </div>
-                  <div className="col-md-6">
-                    <h3 className="name-intro">PUBG</h3>
-                    <span className="hr-intro" />
-                    <p className="docopation-intro">
-                      Встречайте новая мини-игра <br />
-                      PUBG теперь и в майнкрафте.
-                    </p>
-                    <a href="#" className="btn-drop">
-                      <span className="ic-sx22" /> Подробнее
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/* Add Pagination */}
-              <div className="swiper-pagination" />
-              {/* Add Arrows */}
-            </div>
-          </div>
-          <div className="col-lg-3">
-            <a href="/how-start.html" className="block-s1">
-              <p className="how-to-games">Как начать играть ?</p>
-              <p className="desctops">
-                {" "}
-                В данной теме рассказано как нчать игру на нашем проекте.
-              </p>
-            </a>
-            <a href="#" className="block-s1 p2">
-              <p className="how-to-games">Стать модератором</p>
-              <p className="desctops">
-                {" "}
-                В данном разделе вы можете купить модераторку за 900р.
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <span className="no-intro" />
     {/* Home Section END */}
     <div className="container">
       <div className="row">
         <div className="col-lg-9 col-md-9">
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <span className="hot-news">HOT</span>
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
+          <span className="name-rog">
+            <div className="hr-line" /> КАК НАЧАТЬ ИГРАТЬ
+          </span>
+          <div className="section-how">
+            <span className="num-1">01</span>
+            <div className="reved">
+              <div className="arrow-road" />
+              <p>
+                Для начала вам нужно зарегистрировать свой игровой аккаунт
+                перейдя к регистрации. Запомните, что только Вы в силах защитить
+                свой аккаунт от рук злоумышленников установив сложный пароль,
+                например: <span style={{ color: "#000" }}>xR3E8g1bHjLM</span>
+              </p>
+            </div>
           </div>
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <span className="new-news">NEW</span>
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
+          <div className="section-how">
+            <span className="num-2">02</span>
+            <div className="reved">
+              <div className="arrow-road" />
+              <p>
+                Перед непосредственным началом игры Вам в обязательном порядке
+                необходимо ознакомиться с правилами игры на игровых серверах
+                StreamCraft.net. Все эти правила призваны сделать игру
+                максимально честной, комфортной и интересной.
+              </p>
+            </div>
           </div>
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
+          <div className="section-how">
+            <span className="num-3">03</span>
+            <div className="reved">
+              <div className="arrow-road" />
+              <p>
+                Теперь Вам стоит определиться с тем, какой тематики сервер вам
+                больше нравится. На сегодняшний день мы предлагаем Вам самые
+                стабильные сборки серверов среди русскоязычного Minecraft
+                сообщества на самых последних версиях доступных игровых модов.
+              </p>
+            </div>
           </div>
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
+          <div className="section-how">
+            <span className="num-4">04</span>
+            <div className="reved">
+              <div className="arrow-road" />
+              <p>
+                Если первые три пункта Вы успешно преодолели - поздравляем,
+                остается последний заключительный пункт. Сейчас Вам необходимо
+                перейти на специальную страницу с выбором лаунчера для вашей
+                операционной системы. Перейти на эту страничку можно нажав на
+                красиво висящий щит в шапке сайта со словами 'Скачать лаунчер'
+              </p>
+            </div>
+          </div>
+          <div className="video-block">
+            <span className="name-rog">
+              <div className="hr-line" /> ВИДЕО ИНСТРУКЦИЯ
+            </span>
+            <div className="section-how">
+              <span className="num-video">
+                <span className="video-icons" />
+              </span>
+              <div className="reved">
+                <div className="arrow-roadx" />
+                <span className="video-center">
+                  <iframe
+                    width={703}
+                    height={315}
+                    src="https://www.youtube.com/embed/DrCUuWODgQc"
+                    frameBorder={0}
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen=""
+                  />
+                </span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-3">
@@ -384,8 +320,8 @@ function Home() {
   {/* Page Content END */}
 </>
 
-
+    </>
   )
 }
 
-export default Home
+export default HowStart

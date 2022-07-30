@@ -1,10 +1,9 @@
 import React from 'react'
 
-
-function Home() {
+function Download() {
   return (
     <>
- 
+      <>
   {/* Page Content START */}
   <div className="page-content">
     {/* Main Nav START */}
@@ -24,7 +23,7 @@ function Home() {
             </div>
             <div className="nav-wrap">
               <ul id="nav" className="nav-wrap__list menu">
-                <li className="current">
+                <li>
                   <a href="/" title="Главная">
                     Главная
                   </a>
@@ -103,149 +102,126 @@ function Home() {
     </nav>
     {/* Main Nav END */}
     {/* Home Section START */}
-    <section id="home-sec" className="main-banner parallax">
-      <div className="bg-lefts" />
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-9">
-            {/* Swiper */}
-            <div className="swiper-container">
-              <div className="swiper-wrapper">
-                <div className="swiper-slide" data-hash="slide1">
-                  <div className="col-md-6">
-                    <span className="img-ste1" />
-                  </div>
-                  <div className="col-md-6">
-                    <h3 className="name-intro">PUBG</h3>
-                    <span className="hr-intro" />
-                    <p className="docopation-intro">
-                      Встречайте новая мини-игра <br />
-                      PUBG теперь и в майнкрафте.
-                    </p>
-                    <a href="#" className="btn-drop">
-                      <span className="ic-sx22" /> Подробнее
-                    </a>
-                  </div>
-                </div>
-                <div className="swiper-slide" data-hash="slide2">
-                  <div className="col-md-6">
-                    <span className="img-ste1" />
-                  </div>
-                  <div className="col-md-6">
-                    <h3 className="name-intro">PUBG</h3>
-                    <span className="hr-intro" />
-                    <p className="docopation-intro">
-                      Встречайте новая мини-игра <br />
-                      PUBG теперь и в майнкрафте.
-                    </p>
-                    <a href="#" className="btn-drop">
-                      <span className="ic-sx22" /> Подробнее
-                    </a>
-                  </div>
-                </div>
-                <div className="swiper-slide" data-hash="slide3">
-                  <div className="col-md-6">
-                    <span className="img-ste1" />
-                  </div>
-                  <div className="col-md-6">
-                    <h3 className="name-intro">PUBG</h3>
-                    <span className="hr-intro" />
-                    <p className="docopation-intro">
-                      Встречайте новая мини-игра <br />
-                      PUBG теперь и в майнкрафте.
-                    </p>
-                    <a href="#" className="btn-drop">
-                      <span className="ic-sx22" /> Подробнее
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/* Add Pagination */}
-              <div className="swiper-pagination" />
-              {/* Add Arrows */}
-            </div>
-          </div>
-          <div className="col-lg-3">
-            <a href="/how-start.html" className="block-s1">
-              <p className="how-to-games">Как начать играть ?</p>
-              <p className="desctops">
-                {" "}
-                В данной теме рассказано как нчать игру на нашем проекте.
-              </p>
-            </a>
-            <a href="#" className="block-s1 p2">
-              <p className="how-to-games">Стать модератором</p>
-              <p className="desctops">
-                {" "}
-                В данном разделе вы можете купить модераторку за 900р.
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <span className="no-intro" />
     {/* Home Section END */}
     <div className="container">
       <div className="row">
         <div className="col-lg-9 col-md-9">
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <span className="hot-news">HOT</span>
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
+          <span className="name-rog">
+            <div className="hr-line" />
+            НАШ ЛАУНЧЕР
+          </span>
+          <div className="promo-donate">
+            <div className="col-md-1 dv lv">
+              <span className="ic-info" />
+            </div>
+            <div className="col-md-10 lv">
+              <h3 className="th-name">Загрузка игрового клиента:</h3>
+              <p className="desctop">
+                Для игры на наших серверах требуется наш игровой клиент, без
+                него невозможно зайти на наши сервера.
+                <br />
+                <br />
+                Лаунчер - это программа запуска наших игровых клиентов, эта
+                программа автоматически загружает нужные модификации и
+                обновления наших клиентов.
+                <br />
+                Так же для работы лаунчера необходима установленная Java
+                (загрузить её можно ниже)
+              </p>
+              <a href="#" className="btn-startgames lf">
+                <span className="ic-dw" /> Для Windows
+              </a>
+              <a href="#" className="btn-startgames linux lf">
+                <span className="ic-dw" /> Для Linux
+              </a>
+              <a href="#" className="btn-startgames macosx lf">
+                <span className="ic-dw" /> Для MacOs
+              </a>
+            </div>
           </div>
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <span className="new-news">NEW</span>
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
+          <span className="name-rog">
+            <div className="hr-line" />
+            ВОПРОСЫ И ОТВЕТЫ ПО ЛАУНЧЕРУ
+          </span>
+          <div className="cd-faq-items">
+            <ul id="basics" className="cd-faq-group">
+              <br />
+              <li>
+                <a className="cd-faq-trigger" href="#0">
+                  Каковы рекомендуемые системные требования?
+                </a>
+                <div className="cd-faq-content">
+                  <p>
+                    Мы рекомендуем запускать наши клиенты на 64-х разрядных
+                    системах. Необходимое количество оперативной памяти для
+                    работы игры - 1024 Мб.
+                  </p>
+                </div>
+                {/* cd-faq-content */}
+              </li>
+              <li>
+                <a className="cd-faq-trigger" href="#0">
+                  Почему лаунчер был заблокирован моим антивирусом?
+                </a>
+                <div className="cd-faq-content">
+                  <p>
+                    Наш лаунчер не содержит в себе вирусов. Не бойтесь за свою
+                    безопасность! Положитесь на нас! Если ваш антивирус ругается
+                    на наш лаунчер, то просто добавьте его в исключения! В том
+                    случае, если Вы не доверяете нам, просто проверьте лаунчер
+                    на содержание вредоносного кода в сервисе virustotal.com
+                    <br />
+                    <br />
+                    Антивирус может заблокировать наш лаунчер из-за обфуксации
+                    кода (защита от взлома лаунчера).
+                  </p>
+                </div>
+                {/* cd-faq-content */}
+              </li>
+              <li>
+                <a className="cd-faq-trigger" href="#0">
+                  Почему лаунчер закрывается после загрузки файлов и не
+                  запускает игру?
+                </a>
+                <div className="cd-faq-content">
+                  <p>
+                    Дело в том, что вам скорее всего нужно установить или
+                    обновить драйвер вашей видеокарты. Загрузить официальные
+                    драйверы можно здесь: AMD NVidia Intel Graphics
+                  </p>
+                </div>
+                {/* cd-faq-content */}
+              </li>
+              <li>
+                <a className="cd-faq-trigger" href="#0">
+                  Что делать при ошибке соединения лаунчера и серверов
+                  авторизации?
+                </a>
+                <div className="cd-faq-content">
+                  <p>
+                    Достаточно установить DNS сервера от Yandex или Google.
+                    Решение проблемы: Информация о настройке DNS
+                  </p>
+                </div>
+                {/* cd-faq-content */}
+              </li>
+              <li>
+                <a className="cd-faq-trigger" href="#0">
+                  Все пункты выше не помогли?
+                </a>
+                <div className="cd-faq-content">
+                  <p>
+                    Напишите нам о своей проблеме, мы попытаемся помочь вам.
+                    Обратиться в поддержку можно перейдя по этой: ссылке
+                  </p>
+                </div>
+                {/* cd-faq-content */}
+              </li>
+            </ul>
+            {/* cd-faq-group */}
           </div>
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
-          </div>
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
-          </div>
+          {/* cd-faq-items */}
         </div>
         <div className="col-lg-3 col-md-3">
           <div className="right-block">
@@ -384,8 +360,8 @@ function Home() {
   {/* Page Content END */}
 </>
 
-
+    </>
   )
 }
 
-export default Home
+export default Download
