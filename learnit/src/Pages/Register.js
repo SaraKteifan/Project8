@@ -1,114 +1,76 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {useSelector,useDispatch } from 'react-redux';
+import {signUp} from "../actions/index";
+
+const usernameRegExp= RegExp(
+  /^[A-Za-z0-9_-]*$/
+)
+const emailRegExp = RegExp(
+  /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
+)
+const passRegExp= RegExp(
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+)
 
 function Register() {
+  const dispatch=useDispatch();
+  const errors=useSelector(state=>state.signUp.errors);
+  const [username,setUsername]= useState('')
+  const [email,setEmail]= useState('')
+  const [password,setPassword]= useState('')
+  const [confirmPassword,setConfirmPassword]= useState('')
+
+
+  const signUpFun=()=>{
+    let errors={usernameError:'',emailError:'',passwordError:'',confirmPasswordError:''};
+
+    if(username !=='' && usernameRegExp.test(username)){
+      errors={...errors, 
+        usernameError:''}
+    }else{
+      errors={...errors, 
+        usernameError:'Invalid Username, Username can only have letters, numbers, - and _ '}
+    };
+    
+    if(email !=='' && emailRegExp.test(email)){
+      errors={...errors, 
+        emailError:''}
+    }else{
+      errors={...errors, 
+        emailError:'Invalid email, email must be in the form of example@test.com'}
+      };
+
+    if(password !=='' && passRegExp.test(password)){
+      errors={...errors, 
+        passwordError:''}
+    }else{
+      errors={...errors, 
+        passwordError:'Invalid password, password must contain at least \n - one small letter, \n - one capital letter, \n - one number, \n - one special character, \n - and minimum of 8 characters'}
+    };
+
+    if(confirmPassword !== '' && confirmPassword === password){
+      errors={...errors,
+        confirmPasswordError:''}
+    }else{
+      errors={...errors,
+        confirmPasswordError:'The two passwords do not match'}
+      };   
+
+    dispatch(signUp(errors,username,email,password))
+  }
+
   return (
     <>
       <>
-  {/* Page Content START */}
-  <div className="page-content">
-    {/* Main Nav START */}
-    <nav id="main-nav" className="main-nav fixed">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="nav-header d-flex justify-content-between align-items-center">
-              <a href="index.html" className="logo" title="LOGO">
-                <img className="logo-img" src="../img/logo.png" alt="LOGO" />
-                <img
-                  className="alt-logo-img"
-                  src="../img/logo-alt.png"
-                  alt="LOGO"
-                />
-              </a>
-            </div>
-            <div className="nav-wrap">
-              <ul id="nav" className="nav-wrap__list menu">
-                <li>
-                  <a href="/" title="Главная">
-                    Главная
-                  </a>
-                </li>
-                <li>
-                  <a href="/about.html" title="Проекте">
-                    О Проекте
-                  </a>
-                </li>
-                <li>
-                  <a href="/donate.html" title="Донат">
-                    <span className="red-fox">Донат</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="/contacts.html" title="Контакты">
-                    Контакты
-                  </a>
-                </li>
-                <div className="dropdown">
-                  <span>
-                    <div className="drop-ed" />
-                  </span>
-                  <div className="dropdown-content">
-                    <span className="arrow_box" />
-                    <ul className="drop-vape">
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </ul>
-              <div className="riglt-floats-xs">
-                <a href="#" className="btn-login">
-                  <span className="ic-sx21" /> Войти в аккаунт
-                </a>
-                <a href="/how-start.html" className="btn-startgames">
-                  <span className="ic-sx22" /> Начать играть
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    {/* Main Nav END */}
     {/* Home Section START */}
     <span className="no-intro" />
     {/* Home Section END */}
     <div className="container">
       <div className="row">
-        <div className="col-lg-9 col-md-9">
+      <div className="col-md-2"></div>
+        <div className="col-lg-9 col-md-8">
           <span className="name-rog">
-            <div className="hr-line" /> РЕГИСТРАЦИЯ АККАУНТА
+            <div className="hr-line" /> Sign Up
           </span>
           <div className="section-how">
             <span className="num-1">01</span>
@@ -116,19 +78,17 @@ function Register() {
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Придумайте себе ник
-                  <p className="reveria">Минимум 4 символа, максимум 16</p>
+                  Username*
+                  <p className="reveria">{errors.usernameError}</p>
                 </span>
                 <input
                   type="text"
                   name="name"
                   id="name"
-                  placeholder="Логин"
+                  placeholder="Username"
                   className="registration_short_field"
+                  onChange={(e)=> setUsername(e.target.value)}
                 />
-                <button className="generatel-btn">
-                  <span className="ic-g" />
-                </button>
               </form>
             </div>
           </div>
@@ -138,15 +98,16 @@ function Register() {
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Email адрес
-                  <p className="reveria">Нужен для восстановления пароля</p>
+                  Email Address*
+                  <p className="reveria">{errors.emailError}</p>
                 </span>
                 <input
                   type="text"
                   name="mail"
                   id="mail"
-                  placeholder="Почта"
+                  placeholder="example@test.com"
                   className="registration_short_field"
+                  onChange={(e)=> setEmail(e.target.value)}
                 />
               </form>
             </div>
@@ -157,15 +118,16 @@ function Register() {
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Пароль
-                  <p className="reveria">Максимально сложный</p>
+                  Password*
+                  <p className="reveria">{errors.passwordError}</p>
                 </span>
                 <input
                   type="password"
                   name="password"
                   id="password"
-                  placeholder="Пароль"
+                  placeholder="Password"
                   className="registration_short_field"
+                  onChange={(e)=> setPassword(e.target.value)}
                 />
               </form>
             </div>
@@ -176,167 +138,37 @@ function Register() {
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Повторите пароль
-                  <p className="reveria">Убедиться, что не допущены ошибки</p>
+                  Confirm Password*
+                  <p className="reveria">{errors.confirmPasswordError}</p>
                 </span>
                 <input
                   type="password"
                   name="password-repeat"
                   id="password-repeat"
-                  placeholder="Повторите пароль"
+                  placeholder="Confirm Password"
                   className="registration_short_field"
+                  onChange={(e)=> setConfirmPassword(e.target.value)}
                 />
               </form>
             </div>
           </div>
           <div className="down-reg">
-            <a href="#" className="register">
-              Продолжить
+            <a onClick={() => signUpFun()} className="register">
+              Sign Up
             </a>
             <a href="#" className="icon-vks">
-              <span className="vk-btn" />
+              {/* <span className="vk-btn" /> */}
+              Login
             </a>
             <div className="title-xh">
               <span className="arrow_xd" />
-              Войти через ВКонтакте
+              *All fields are required
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-3">
-          <div className="right-block">
-            <div className="n-m">Мониторинг Серверов</div>
-            <div className="server online">
-              <div className="second circle">
-                <strong />
-              </div>
-              <div className="server_name">
-                <a href="#">01 Сервер</a>
-              </div>
-              <div className="server_players">Онлайн: 50/100</div>
-            </div>
-            <div className="server online">
-              <div className="second circle">
-                <strong />
-              </div>
-              <div className="server_name">
-                <a href="#">01 Сервер</a>
-              </div>
-              <div className="server_players">Онлайн: 50/100</div>
-            </div>
-            <div className="server online">
-              <div className="second circle">
-                <strong />
-              </div>
-              <div className="server_name">
-                <a href="#">01 Сервер</a>
-              </div>
-              <div className="server_players">Онлайн: 50/100</div>
-            </div>
-            <div className="server online">
-              <div className="second circle">
-                <strong />
-              </div>
-              <div className="server_name">
-                <a href="#">01 Сервер</a>
-              </div>
-              <div className="server_players">Онлайн: 50/100</div>
-            </div>
-            <div className="server online">
-              <div className="second circle">
-                <strong />
-              </div>
-              <div className="server_name">
-                <a href="#">01 Сервер</a>
-              </div>
-              <div className="server_players">Онлайн: 50/100</div>
-            </div>
-            <div className="server online">
-              <div className="second circle">
-                <strong />
-              </div>
-              <div className="server_name">
-                <a href="#">01 Сервер</a>
-              </div>
-              <div className="server_players">Онлайн: 50/100</div>
-            </div>
-            <div className="server online not-hr">
-              <div className="second circle">
-                <strong />
-              </div>
-              <div className="server_name">
-                <a href="#">01 Сервер</a>
-              </div>
-              <div className="server_players">Онлайн: 50/100</div>
-            </div>
-            <div className="server online not-hr">
-              <div className="second circle">
-                <strong />
-              </div>
-              <div className="server_name">
-                <a href="#">01 Сервер</a>
-              </div>
-              <div className="server_players">Онлайн: 50/100</div>
-            </div>
-            <p className="tdx-strom">
-              <span className="online-o" /> Общий онлайн: 2173
-            </p>
-          </div>
-          <div className="right-block vk">
-            <div className="n-m">Мониторинг Серверов</div>
-            <div className="widget-vk">WIDGET VK</div>
-          </div>
-        </div>
+      <div className="col-md-2"></div>
       </div>
     </div>
-    {/* Footer START */}
-    <footer className="section site-footer bg-dark">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-2 col-md-2">
-            <img
-              className="logo-img my-3"
-              src="../img/logo-ft.png"
-              alt="LOGO"
-            />
-          </div>
-          <div className="col-lg-6 col-md-6 text-center">
-            <p className="footer-text">
-              © ProjectNames 2018 - Все права только у меня.
-            </p>
-          </div>
-          <div className="col-md-4">
-            <ul className="ft-nav social-nav my-3">
-              <li className="mx-1">
-                <a href="javascript:void(0);" title="vk">
-                  <i className="fa fa-vk" />
-                </a>
-              </li>
-              <li className="mx-1">
-                <a href="javascript:void(0);" title="twitter">
-                  <i className="fa fa-twitter" />
-                </a>
-              </li>
-              <li className="mx-1">
-                <a href="javascript:void(0);" title="facebook">
-                  <i className="fa fa-facebook" />
-                </a>
-              </li>
-              <li className="mx-1">
-                <a href="javascript:void(0);" title="instagram">
-                  <i className="fa fa-instagram" />
-                </a>
-              </li>
-            </ul>
-            <a href="http://larts.pro/">
-              <span className="corp-design" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    {/* Footer END */}
-  </div>
-  {/* Page Content END */}
 </>
 
     </>
