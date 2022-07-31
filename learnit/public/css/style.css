@@ -125,10 +125,10 @@ a.btn-startgames:hover {
       align-items: center;
     }
 	span.img-ste1 {
-    background: url(/icons/img-ste1.png) no-repeat;
+    background: url(../img/hero.png) no-repeat;
     display: block;
-    width: 560px;
-    height: 420px;
+    width: 450px;
+    height: 350px;
     background-size: contain;
 }
 h3.name-intro {
@@ -612,7 +612,7 @@ span.num-1:after {
     font-size: 14px;
     color: #89939d;
     font-weight: 700;
-    padding: 15px 20px;
+    padding: 15px 35px 15px 20px;
     width: 90%;
     float: right;
 }
@@ -732,7 +732,8 @@ span.num-4:after {
     margin-left: 24px;
 }
 .video-block {
-    margin-top: 80px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 span.num-video {
     background: linear-gradient( 45deg, #fe5a73, #fda756 );
@@ -934,7 +935,7 @@ input#name {
     border-bottom: 1px solid #fff;
     border: none;
     padding: 15px;
-    width: 250px;
+    width: 311px;
     border-radius: 3px;
     font-weight: 600;
     margin-left: 210px;
@@ -955,7 +956,7 @@ input#mail {
     box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
     outline: none;
 }
-span.name-form:after {
+/* span.name-form:after {
     content: "";
     width: 160px;
     height: 2px;
@@ -963,7 +964,7 @@ span.name-form:after {
     position: absolute;
     margin-left: 200px;
     margin-top: -35px;
-}
+} */
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #b7bcc2;
 }
@@ -1018,7 +1019,7 @@ input#password {
     width: 311px;
     border-radius: 3px;
     font-weight: 600;
-    margin-left: 271px;
+    margin-left: 255px;
     box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
     outline: none;
 }
@@ -1032,7 +1033,7 @@ input#password-repeat {
     width: 311px;
     border-radius: 3px;
     font-weight: 600;
-    margin-left: 201px;
+    margin-left: 255px;
     box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
     outline: none;
 }
@@ -1065,6 +1066,7 @@ a.register {
     color: #89939d;
     font-weight: 700;
     margin-top: 25px;
+    margin-bottom: 25px;
     padding: 15px 20px;
     width: 530px;
 }
@@ -1079,6 +1081,7 @@ a.register:hover {
 }
 a.icon-vks {
     background: linear-gradient(to right, #42a4f3, #5260d5);
+    color: #fff;
     display: -webkit-box;
     margin: 0 auto;
     height: 53px;
@@ -1099,6 +1102,7 @@ span.vk-btn {
 
 a.icon-vks:hover {
     background: linear-gradient(to right, #55b2fd, #6573ea);
+    text-decoration: none;
     box-shadow: 0px 20px 45px 0px #ccd4e0;
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);

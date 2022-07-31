@@ -20,23 +20,23 @@ function Navbar() {
             <div className="nav-wrap">
               <ul id="nav" className="nav-wrap__list menu">
                 <li className="current">
-                  <a href="/" title="Главная">
-                    Главная
+                  <a href="/" title="Home">
+                    Home
                   </a>
                 </li>
                 <li>
-                  <a href="/about.html" title="Проекте">
-                    О Проекте
+                  <a href="/" title="Courses">
+                    Courses
                   </a>
                 </li>
                 <li>
-                  <a href="/donate.html" title="Донат">
-                    <span className="red-fox">Донат</span>
+                  <a href="/" title="About Us">
+                    <span className="red-fox">About Us</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/contacts.html" title="Контакты">
-                    Контакты
+                  <a href="/" title="Contact Us">
+                    Contact Us
                   </a>
                 </li>
                 <div className="dropdown">
@@ -55,40 +55,16 @@ function Navbar() {
                       <li>
                         <a href="#">Банлист</a>
                       </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
-                      <li>
-                        <a href="#">Банлист</a>
-                      </li>
                     </ul>
                   </div>
                 </div>
               </ul>
               <div className="riglt-floats-xs">
                 <a href="#" className="btn-login">
-                  <span className="ic-sx21" /> Войти в аккаунт
+                  <span className="ic-sx21" /> Login
                 </a>
                 <a href="/how-start.html" className="btn-startgames">
-                  <span className="ic-sx22" /> Начать играть
+                  <span className="ic-sx22" /> Join Us
                 </a>
               </div>
             </div>
