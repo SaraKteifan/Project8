@@ -1,8 +1,12 @@
 body{
     margin-top:20px;
     /* background:#eee; */
+    
 }
 /* My Account */
+.container{
+    margin-bottom: 40px;
+}
 .payments-item img.mr-3 {
     width: 47px;
 }
