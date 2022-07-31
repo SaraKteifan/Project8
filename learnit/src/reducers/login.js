@@ -8,7 +8,7 @@ export default function(state = {error:'',userId:''}, action){
             }else{
                 return{
                     ...state,
-                    error:'email or password is invalid',}
+                    error:'Email or Password is invalid',}
             }
         default: return state
     }

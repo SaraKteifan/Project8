@@ -45,7 +45,7 @@ function Register() {
         passwordError:''}
     }else{
       errors={...errors, 
-        passwordError:'Invalid password, password must contain at least \n - one small letter, \n - one capital letter, \n - one number, \n - one special character, \n - and minimum of 8 characters'}
+        passwordError:'Invalid password, password must contain at least \n - one small letter,\n - one capital letter, \n - one number, \n - one special character, \n - and minimum of 8 characters'}
     };
 
     if(confirmPassword !== '' && confirmPassword === password){
@@ -78,8 +78,8 @@ function Register() {
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Username*
-                  <p className="reveria">{errors.usernameError}</p>
+                  Username<span className='star'> *</span>
+              
                 </span>
                 <input
                   type="text"
@@ -90,16 +90,20 @@ function Register() {
                   onChange={(e)=> setUsername(e.target.value)}
                 />
               </form>
+              <br/>
+         
             </div>
+            
           </div>
+          <p className="error">{errors.usernameError}</p>
           <div className="section-how">
             <span className="num-2">02</span>
             <div className="reved">
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Email Address*
-                  <p className="reveria">{errors.emailError}</p>
+                  Email Address<span className='star'> *</span>
+                
                 </span>
                 <input
                   type="text"
@@ -112,14 +116,15 @@ function Register() {
               </form>
             </div>
           </div>
+          <p className="error">{errors.emailError}</p>
           <div className="section-how">
             <span className="num-3">03</span>
             <div className="reved">
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Password*
-                  <p className="reveria">{errors.passwordError}</p>
+                  Password<span className='star'> *</span>
+                 
                 </span>
                 <input
                   type="password"
@@ -132,14 +137,15 @@ function Register() {
               </form>
             </div>
           </div>
+          <p className="error">{errors.passwordError}</p>
           <div className="section-how">
             <span className="num-4">04</span>
             <div className="reved">
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Confirm Password*
-                  <p className="reveria">{errors.confirmPasswordError}</p>
+                  Confirm Password<span className='star'> *</span>
+                  
                 </span>
                 <input
                   type="password"
@@ -152,6 +158,7 @@ function Register() {
               </form>
             </div>
           </div>
+          <p className="error">{errors.confirmPasswordError}</p>
           <div className="down-reg">
             <a onClick={() => signUpFun()} className="register">
               Sign Up
