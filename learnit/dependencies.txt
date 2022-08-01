@@ -6,3 +6,4 @@ npm i redux-devtools-extension
 npm i @progress/kendo-react-treeview --save
 npm install --save @progress/kendo-theme-default@4.8.0
 npm i @progress/kendo-react-scheduler
+npm install react-bootstrap bootstrap
