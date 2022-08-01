@@ -10,6 +10,8 @@ export default function(state = {error:'',userId:''}, action){
                     ...state,
                     error:'Email or Password is invalid',}
             }
+        case 'logout':
+            sessionStorage.clear();
         default: return state
     }
 
