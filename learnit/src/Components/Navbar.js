@@ -70,15 +70,15 @@ function Navbar() {
                 </a>}
                 {user_id &&
                 <a href="/" className="btn-startgames" onClick={()=>dispatch(logout())}>
-                  <span className="ic-sx22" /> Logout
+                  <span className="ic-sx22" id="logoutBtn"/> Logout
                 </a>}
                 {!user_id &&
                 <a href="/Login" className="btn-login">
-                  <span className="ic-sx21" /> Login
+                  <span className="ic-sx21" id="loginBtn"/> Login
                 </a>}
                 {!user_id &&
                 <a href="/SignUp" className="btn-startgames">
-                  <span className="ic-sx22" /> Join Us
+                  <span className="ic-sx22" id="joinUstBtn"/> Join Us
                 </a>}
               </div>
             </div>

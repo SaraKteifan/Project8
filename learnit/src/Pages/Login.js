@@ -36,7 +36,7 @@ function Login() {
                   <p className="reveria"></p>
                 </span>
                 <input
-                  type="text"
+                  type="email"
                   name="name"
                   id="name"
                   placeholder="example@test.com"
