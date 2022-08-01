@@ -1,12 +1,8 @@
 import React from 'react'
 import './profile.css'
-import {useSelector,useDispatch } from 'react-redux';
-
 
 
 function Profile() {
-  const user_data=useSelector(state=>state.profile);
-
   return (
     <div>
 <div className="container">
@@ -22,7 +18,7 @@ function Profile() {
                 alt="gurdeep singh osahan"
               />
               <div className="osahan-user-media-body">
-                <h6 className="mb-2">{user_data.username}</h6>
+                <h6 className="mb-2">John Doe</h6>
                 <p className="mb-1">+91 85680-79956</p>
                 <p>bootdey@bootdey.com</p>
                 <p className="mb-0 text-black font-weight-bold">
@@ -54,8 +50,13 @@ function Profile() {
               aria-controls="favourites"
               aria-selected="false"
             >
-              <i className="icofont-heart" /> Favorites
-            </a>
+              {/* <i className="icofont-heart" /> manage your schedule here. */}
+           
+          
+            <a href="/Scheduler" className="icon-vks">
+            <i class="fa-solid fa-calendar-days"></i>
+             your schedule 
+            </a> </a>
           </li>
         </ul>
       </div>
