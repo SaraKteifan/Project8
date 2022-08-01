@@ -739,7 +739,7 @@ span.num-4:after {
 }
 .video-block {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20%;
 }
 span.num-video {
     background: linear-gradient( 45deg, #fe5a73, #fda756 );

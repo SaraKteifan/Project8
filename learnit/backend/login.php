@@ -7,7 +7,7 @@ require "connection.php";
 
 
     try {
-        $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+        $sql = "SELECT * FROM student WHERE user_email='$email' AND user_password='$password'";
     
         $q = $conn->query($sql);
         $q->setFetchMode(PDO::FETCH_ASSOC);
@@ -15,6 +15,6 @@ require "connection.php";
         die("Could not connect to the database $dbname :" . $e->getMessage());
     }
      while ($row = $q->fetch()): 
-            echo htmlspecialchars($row['user_id']);
+            echo htmlspecialchars($row['st_id']);
      endwhile; 
      ?>

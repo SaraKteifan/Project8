@@ -5,7 +5,7 @@ header("Access-Control-Allow-Origin: *");
 $dbsn = "localhost";
 $dbun = "root";
 $password = "";
-$dbname = "learnit";
+$dbname = "project9";
 
 $dsn ="mysql:host=$dbsn;dbname=$dbname";
 
