@@ -9,6 +9,9 @@ import HowStart from "./Pages/HowStart";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
+import RoomScheduler from "./Pages/RoomScheduler";
+import "@progress/kendo-theme-default/dist/all.css";
+import Contact from "./Pages/Contact";
 
 
 function App() {
@@ -25,10 +28,15 @@ function App() {
         <Route path="/Download" element={<Download/>}/>
         <Route path="/HowStart" element={<HowStart/>}/>
         <Route path="/Profile" element={<Profile/>}/>
+        {/* <Route path="/Contact" element={<Contact/>}/> */}
+        
       </Routes>
     </BrowserRouter>
     <Footer/>
     </div>
+  
+     <Contact/>
+     <RoomScheduler/>
     </>
   );
 }
