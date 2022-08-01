@@ -32,7 +32,7 @@ function Login() {
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Email Addres*
+                  Email Addres<span className='star'> *</span>
                   <p className="reveria"></p>
                 </span>
                 <input
@@ -53,7 +53,7 @@ function Login() {
               <div className="arrow-road" />
               <form className="reg-down">
                 <span className="name-form">
-                  Password*
+                  Password<span className='star'> *</span>
                   <p className="reveria"></p>
                 </span>
                 <input
@@ -67,8 +67,9 @@ function Login() {
               </form>
             </div>
           </div>
+          <p className='error'>{error.error}</p>
           <div className="down-reg">
-            {error.error}
+          
             <a onClick={()=>dispatch(login(email,password))} className="register">
               Login
             </a>
@@ -76,6 +77,7 @@ function Login() {
               {/* <span className="vk-btn" /> */}
               Sign Up
             </a>
+            
             <div className="title-xh">
               <span className="arrow_xd" />
               *All fields are required

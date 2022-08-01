@@ -1,3 +1,4 @@
+
 span.red-fox {
     color: #fe666f;
 }
@@ -503,6 +504,7 @@ span.online-o {
 footer.section.site-footer.bg-dark {
     background: #343a4a !important;
     padding: 10px;
+    width: 100%;
 }
 img.logo-img.my-3 {
     color: #484f62;
@@ -567,18 +569,20 @@ span.no-intro {
 }
 span.name-rog {
     color: #2e3338;
-    font-size: 16px;
+    font-size:xx-large;
     font-weight: 700;
+
+    
 }
 
 .hr-line {
     width: 100px;
     height: 2px;
-    background: #d5dfea;
+    /* background: #d5dfea; */
     position: relative;
     float: left;
-    margin-top: 10px;
-    margin-right: 15px;
+    margin-top: 25px;
+    margin-right: 5%;
 }
 span.num-1 {
     background: linear-gradient( 45deg, #64af19, #9bdb01 );
@@ -615,6 +619,8 @@ span.num-1:after {
     padding: 15px 35px 15px 20px;
     width: 90%;
     float: right;
+    height: 95%;
+    
 }
 
 .arrow-road {
@@ -655,7 +661,7 @@ span.num-1:after {
 	margin-left: -55px;
 }
 .section-how {
-    margin-top: 35px;
+    margin-top: 60px;
     height: 100px;
 }
 
@@ -733,7 +739,7 @@ span.num-4:after {
 }
 .video-block {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20%;
 }
 span.num-video {
     background: linear-gradient( 45deg, #fe5a73, #fda756 );
@@ -938,9 +944,10 @@ input#name {
     width: 311px;
     border-radius: 3px;
     font-weight: 600;
-    margin-left: 210px;
+    margin-left: 235px;
     box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
     outline: none;
+    margin-top: 1%;
 }
 input#mail {
     color: #555758;
@@ -955,6 +962,7 @@ input#mail {
     margin-left: 210px;
     box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
     outline: none;
+    margin-top: 1%;
 }
 /* span.name-form:after {
     content: "";
@@ -1019,9 +1027,10 @@ input#password {
     width: 311px;
     border-radius: 3px;
     font-weight: 600;
-    margin-left: 255px;
+    margin-left: 245px;
     box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
     outline: none;
+    margin-top: 1%;
 }
 input#password-repeat {
     color: #555758;
@@ -1033,9 +1042,10 @@ input#password-repeat {
     width: 311px;
     border-radius: 3px;
     font-weight: 600;
-    margin-left: 255px;
+    margin-left: 185px;
     box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.05);
     outline: none;
+    margin-top: 1%;
 }
 a.register {
     background: linear-gradient(to right, #6cb615, #9adb01);
@@ -1066,9 +1076,16 @@ a.register {
     color: #89939d;
     font-weight: 700;
     margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 15px 20px;
-    width: 530px;
+    margin-bottom: 10%;
+    padding: 15px 30px;
+    width: 70%;
+}
+
+.error{
+    text-align: center;
+    font-weight:bolder;
+    color: rgb(255, 81, 0) !important;
+    
 }
 
 a.register:hover {
@@ -1114,6 +1131,10 @@ a.icon-vks:hover {
 	position: relative;
 	background: #4183D7;
 }
+
+.star {
+    color: rgb(255, 81, 0);
+}
 .arrow_xd:after {
 	top: 50%;
 	border: solid transparent;
@@ -1137,7 +1158,7 @@ a.icon-vks:hover {
     height: 35px;
     font-size: 13px;
     line-height: 35px;
-    color: #b2bdca;
+    color: rgb(255, 81, 0);
     font-weight: 700;
     margin-top: 7px;
     box-shadow: 0px 10px 25px 0px rgba(198, 214, 232, 0.30);
@@ -1172,3 +1193,6 @@ a.btn-startgames.macosx.lf {
 a.btn-startgames.macosx.lf:hover {
     background: linear-gradient(to right, #83d028, #a7e80d);
 }
+.ifram{
+    margin-left: 8%;
+    }
