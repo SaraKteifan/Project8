@@ -1193,3 +1193,6 @@ a.btn-startgames.macosx.lf {
 a.btn-startgames.macosx.lf:hover {
     background: linear-gradient(to right, #83d028, #a7e80d);
 }
+.ifram{
+    margin-left: 8%;
+    }
