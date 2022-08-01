@@ -1,0 +1,33 @@
+.card{
+    width: fit-content;
+    background-color: rgb(239, 250, 253);
+    cursor: pointer;
+    user-select: none;
+    padding-bottom: 15px;
+    margin-left: 40px;
+}
+
+.card:hover{
+    background-color: rgb(189, 225, 235);
+}
+
+.image{
+    width: fit-content;
+}
+
+.title{
+    width: 240px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.describ{
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.details{
+    font-size: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
