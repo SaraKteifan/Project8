@@ -151,7 +151,8 @@ const notification = ()=>{
           </div>
          
            <div >
-            <a href="#" className="register"
+            <br></br>
+            <a href="#" className="registercontact"
             
            
             type="submit"
@@ -178,7 +179,7 @@ const notification = ()=>{
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27764.911935385284!2d35.01916159171958!3d29.556733703948556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sjo!4v1657047509224!5m2!1sen!2sjo" width={1050} height={250}></iframe>
 
       </div>
-  
+  <br></br><br></br>
 
 </>
 

@@ -63,8 +63,13 @@ function Profile() {
               aria-controls="favourites"
               aria-selected="false"
             >
-              <i className="icofont-heart" /> Favorites
-            </a>
+              {/* <i className="icofont-heart" /> manage your schedule here. */}
+           
+          
+            <a href="/Scheduler" className="icon-vks">
+            <i class="fa-solid fa-calendar-days"></i>
+             your schedule 
+            </a> </a>
           </li>
         </ul>
       </div>
