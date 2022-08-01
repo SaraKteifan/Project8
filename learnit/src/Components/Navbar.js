@@ -1,7 +1,10 @@
 import React from 'react'
+import {useSelector,useDispatch } from 'react-redux';
+import {logout} from "../actions/index";
 
 function Navbar() {
-  let user_id = sessionStorage.getItem("user_info");
+  const dispatch=useDispatch();
+  let user_id= sessionStorage.getItem("user_info");
 
   return (
     <>
@@ -32,12 +35,12 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="/" title="About Us">
+                  <a href="About" title="About Us">
                     <span className="red-fox">About Us</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/" title="Contact Us">
+                  <a href="/Contact" title="Contact Us">
                     Contact Us
                   </a>
                 </li>
@@ -62,12 +65,21 @@ function Navbar() {
                 </div>
               </ul>
               <div className="riglt-floats-xs">
-                <a href="#" className="btn-login">
-                  <span className="ic-sx21" /> Login
-                </a>
-                <a href="/how-start.html" className="btn-startgames">
-                  <span className="ic-sx22" /> Join Us
-                </a>
+                {user_id &&<a href="/Profile" className="btn-login">
+                  <span className="ic-sx21" /> Profile
+                </a>}
+                {user_id &&
+                <a href="/" className="btn-startgames" onClick={()=>dispatch(logout())}>
+                  <span className="ic-sx22" id="logoutBtn"/> Logout
+                </a>}
+                {!user_id &&
+                <a href="/Login" className="btn-login">
+                  <span className="ic-sx21" id="loginBtn"/> Login
+                </a>}
+                {!user_id &&
+                <a href="/SignUp" className="btn-startgames">
+                  <span className="ic-sx22" id="joinUstBtn"/> Join Us
+                </a>}
               </div>
             </div>
           </div>

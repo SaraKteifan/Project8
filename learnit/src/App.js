@@ -8,8 +8,11 @@ import Home from "./Pages/Home";
 import HowStart from "./Pages/HowStart";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
+import About from "./Pages/About";
 import Profile from "./Pages/Profile";
-import Cards from "./Pages/Cards";
+import RoomScheduler from "./Pages/RoomScheduler";
+import "@progress/kendo-theme-default/dist/all.css";
+import Contact from "./Pages/Contact";
 
 
 function App() {
@@ -25,8 +28,14 @@ function App() {
         <Route path="/Donate" element={<Donate/>}/>
         <Route path="/Download" element={<Download/>}/>
         <Route path="/HowStart" element={<HowStart/>}/>
+        <Route path="/About" element={<About/>}/>
+
         <Route path="/Profile" element={<Profile/>}/>
-        <Route path="/Cards" element={<Cards/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Scheduler" element={<RoomScheduler/>}/>
+
+        {/* <Route path="/Contact" element={<Contact/>}/> */}
+        
       </Routes>
     </BrowserRouter>
     <Footer/>

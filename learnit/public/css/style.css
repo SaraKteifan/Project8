@@ -23,7 +23,7 @@ a.btn-login {
 
 span.ic-sx21 {
     width: 21px;
-    height: 21px;
+    height: 24px;
     background: url(/icons/ic26.png) no-repeat;
     background-size: contain;
     margin-left: 10px;
@@ -739,7 +739,7 @@ span.num-4:after {
 }
 .video-block {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20%;
 }
 span.num-video {
     background: linear-gradient( 45deg, #fe5a73, #fda756 );
@@ -1192,4 +1192,20 @@ a.btn-startgames.macosx.lf {
 
 a.btn-startgames.macosx.lf:hover {
     background: linear-gradient(to right, #83d028, #a7e80d);
+}
+.ifram{
+    margin-left: 8%;
+    }
+
+#logoutBtn{
+    background: url(/icons/logout.png) no-repeat;
+}
+#loginBtn{
+    background: url(/icons/login.png) no-repeat;
+}
+#joinUstBtn{
+    background: url(/icons/signUp.png) no-repeat;
+}
+#logoutBtn, #loginBtn, #joinUstBtn{
+    width: 20px;
 }
