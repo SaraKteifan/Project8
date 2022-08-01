@@ -1,6 +1,7 @@
 import React from 'react'
 import './card.css'
 
+
 function Cards() {
     return (
         <div>

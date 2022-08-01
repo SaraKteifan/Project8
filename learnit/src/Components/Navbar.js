@@ -1,6 +1,7 @@
 import React from 'react'
 import {useSelector,useDispatch } from 'react-redux';
 import {logout} from "../actions/index";
+import {profile} from "../actions/index";
 
 function Navbar() {
   const dispatch=useDispatch();
@@ -65,7 +66,7 @@ function Navbar() {
                 </div>
               </ul>
               <div className="riglt-floats-xs">
-                {user_id &&<a href="/Profile" className="btn-login">
+                {user_id &&<a href="/Profile" className="btn-login" onClick={()=> dispatch(profile(user_id))}>
                   <span className="ic-sx21" /> Profile
                 </a>}
                 {user_id &&
