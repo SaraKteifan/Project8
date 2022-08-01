@@ -9,6 +9,7 @@ import HowStart from "./Pages/HowStart";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
+import Cards from "./Pages/Cards";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Download" element={<Download/>}/>
         <Route path="/HowStart" element={<HowStart/>}/>
         <Route path="/Profile" element={<Profile/>}/>
+        <Route path="/Cards" element={<Cards/>}/>
       </Routes>
     </BrowserRouter>
     <Footer/>

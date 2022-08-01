@@ -1,6 +1,8 @@
 import React from 'react'
 
 function Navbar() {
+  let user_id = sessionStorage.getItem("user_info");
+
   return (
     <>
       <nav id="main-nav" className="main-nav fixed">
