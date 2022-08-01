@@ -1,6 +1,11 @@
 import React from 'react'
+import {useSelector,useDispatch } from 'react-redux';
+import {logout} from "../actions/index";
 
 function Navbar() {
+  const dispatch=useDispatch();
+  let user_id= sessionStorage.getItem("user_info");
+
   return (
     <>
       <nav id="main-nav" className="main-nav fixed">
@@ -35,7 +40,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="/" title="Contact Us">
+                  <a href="/Contact" title="Contact Us">
                     Contact Us
                   </a>
                 </li>
@@ -60,12 +65,21 @@ function Navbar() {
                 </div>
               </ul>
               <div className="riglt-floats-xs">
-                <a href="#" className="btn-login">
+                {user_id &&<a href="/Profile" className="btn-login">
+                  <span className="ic-sx21" /> Profile
+                </a>}
+                {user_id &&
+                <a href="/" className="btn-startgames" onClick={()=>dispatch(logout())}>
+                  <span className="ic-sx22" /> Logout
+                </a>}
+                {!user_id &&
+                <a href="/Login" className="btn-login">
                   <span className="ic-sx21" /> Login
-                </a>
-                <a href="/how-start.html" className="btn-startgames">
+                </a>}
+                {!user_id &&
+                <a href="/SignUp" className="btn-startgames">
                   <span className="ic-sx22" /> Join Us
-                </a>
+                </a>}
               </div>
             </div>
           </div>

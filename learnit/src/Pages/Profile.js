@@ -14,7 +14,7 @@ function Profile() {
             <div className="osahan-user-media">
               <img
                 className="mb-3 rounded-pill shadow-sm mt-1"
-                src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                src="./img/avatar.png"
                 alt="gurdeep singh osahan"
               />
               <div className="osahan-user-media-body">
