@@ -40,7 +40,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="/" title="Contact Us">
+                  <a href="/Contact" title="Contact Us">
                     Contact Us
                   </a>
                 </li>

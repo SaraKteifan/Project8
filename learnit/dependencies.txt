@@ -3,3 +3,6 @@ npm install redux react-redux
 npm i axios
 npm i redux-thunk
 npm i redux-devtools-extension
+npm i @progress/kendo-react-treeview --save
+npm install --save @progress/kendo-theme-default@4.8.0
+npm i @progress/kendo-react-scheduler

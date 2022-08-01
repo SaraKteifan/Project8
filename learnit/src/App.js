@@ -28,15 +28,15 @@ function App() {
         <Route path="/Download" element={<Download/>}/>
         <Route path="/HowStart" element={<HowStart/>}/>
         <Route path="/Profile" element={<Profile/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Scheduler" element={<RoomScheduler/>}/>
+
         {/* <Route path="/Contact" element={<Contact/>}/> */}
         
       </Routes>
     </BrowserRouter>
     <Footer/>
     </div>
-  
-     <Contact/>
-     <RoomScheduler/>
     </>
   );
 }
