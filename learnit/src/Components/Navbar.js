@@ -66,7 +66,7 @@ function Navbar() {
                 </div>
               </ul>
               <div className="riglt-floats-xs">
-                {user_id &&<a href="/Profile" className="btn-login" onClick={()=> dispatch(profile(user_id))}>
+                {user_id &&<a href='/Profile' className="btn-login" onClick={()=> dispatch(profile(user_id))}>
                   <span className="ic-sx21" /> Profile
                 </a>}
                 {user_id &&
