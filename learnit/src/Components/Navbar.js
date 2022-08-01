@@ -30,7 +30,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="/" title="About Us">
+                  <a href="About" title="About Us">
                     <span className="red-fox">About Us</span>
                   </a>
                 </li>

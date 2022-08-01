@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import HowStart from "./Pages/HowStart";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
+import About from "./Pages/About";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
         <Route path="/Donate" element={<Donate/>}/>
         <Route path="/Download" element={<Download/>}/>
         <Route path="/HowStart" element={<HowStart/>}/>
+        <Route path="/About" element={<About/>}/>
+
 
         {/* <Route path="/Dashboard" element={<Dashboard />}/> */}
         </Routes>
