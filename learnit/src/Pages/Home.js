@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Subjects from '../Components/Subjects'
 import Video from '../Components/Video'
+import axios from 'axios'
 
 
 function Home() {
