@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Subjects from '../Components/Subjects'
 import Video from '../Components/Video'
+import axios from 'axios'
 
 
 function Home() {
+ 
   return (
     <>
     {/* Home Section START */}
@@ -70,7 +72,7 @@ function Home() {
             </div>
           </div>
           <div className="col-lg-3">
-            <a href="/how-start.html" className="block-s1">
+            <a href="/HowStart" className="block-s1">
               <p className="how-to-games">How to start?</p>
               <p className="desctops">
             Find the way to start step by step

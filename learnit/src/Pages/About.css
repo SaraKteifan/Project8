@@ -1,13 +1,227 @@
-.p{
-    margin: auto;
-    width: 20%;
-    padding: 20px;
-    font-size: 40px;
-}
-.d{
-    margin: auto;
-    width: 40%;
-    padding: 20px;
-    font-size: 25px;
 
+/* Our Team
+-------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+@import url(https://fonts.googleapis.com/css?family=Exo:400,300,200,500,600,700,800,300italic,200italic,400italic,500italic,600italic,700italic,800italic);
+
+/* * {
+  margin:0;
+  padding:0;
+  outline:none;
+  list-style:none;
+  text-decoration:none;
+  box-sizing:border-box;
+} */
+
+/* html, body {
+  height: 100%;
+  width: 100%;  
+} */
+/* 
+body {
+
+  font-family: 'Exo', sans-serif;
+  color: black;
+  font-weight:200;
+} */
+
+h1, h2, h3 {
+  font-family: 'Exo', sans-serif;
+  font-size:48px;
+  text-transform:uppercase;
+  font-weight:200;
 }
+
+/* .wrapper {
+  position: absolute;
+  top:0;bottom:0;left:0;right:0;
+  margin:auto;
+  transition:0.8s transform ease-in-out;
+  -webkit-transition:0.8s transform ease-in-out;
+  transform:scale(0.5);
+  -webkit-transform:scale(0.5);
+  z-index: 2;
+} */
+
+.page {
+  height: 100vh;
+  width: 100vw;
+ 
+  position: absolute;
+  top:-30%;left: 0;right: 0;bottom: -60%;
+  margin: auto;
+}
+
+
+
+.vertical-align {
+  position:relative;
+  height: 300px;
+  top:20%;
+  transform:translateY(-50%);
+    transition:0.2s all ease-in-out;
+  -webkit-transition:0.2s all ease-in-out;
+}
+
+.wrap  {
+  width: 60%;
+  margin:0 auto;
+  text-align:center;
+    transition:0.2s all ease-in-out;
+  -webkit-transition:0.2s all ease-in-out;
+}
+
+.page .wrap p {
+  font-size:18px;
+  margin:20px auto;
+  width: 100%;
+  /* opacity: .5; */
+  letter-spacing:1px;
+  text-align: left;
+}
+
+/* nav {
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;right:0;
+  margin:0 auto;
+  width: 100%;
+  text-align:center;
+  height: 100vh;
+  z-index: 2;
+  display:none;
+  perspective:1000px;
+    transform-style:preserve-3d;
+  -webkit-transform-style:preserve-3d;
+  cursor:pointer;
+} */
+
+/*  */
+.section-wrap {
+    height: 100vh;
+  width: 100vw;
+  position: relative;
+  transform-style:preserve-3d;
+  perspective:1000px;
+    transition:0.8s all ease-in-out;
+  -webkit-transition:0.8s all ease-in-out;
+  overflow:hidden;
+  opacity: 1;
+  
+}
+.section-wrap.active{
+  opacity: 0.2;
+  transform:scale(0.5);
+  -webkit-transform:scale(0.5);
+  
+}
+
+section.active {
+  transform:rotateX(0deg);
+}
+.our-team .team-row {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.our-team .team-wrap {
+  padding: 0 40px;
+}
+
+.our-team .container-fluid {
+  padding: 0 50px;
+}
+
+.team-img img {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+}
+
+.team-member,
+.team-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-title {
+  margin: 30px 0 7px;
+}
+
+.overlay {
+  background-color: rgba(20,20,20,.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.team-details {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 5%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.team-details p {
+  color: #fff;
+}
+
+.team-img:hover .team-details {
+  opacity: 1;
+  margin-top: -80px;
+}
+
+.team-img:hover .overlay {
+  opacity: 1;
+}
+
+.socials a {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-color: transparent;
+}
+
+.socials i {
+  line-height: 37px;
+  color: #616161;
+  font-size: 14px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.team-details .socials i {
+	color: #fff;
+}
+
+.socials a:hover i {
+  color: #fff;
+  background-color: #355c7d;
+}
+

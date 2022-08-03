@@ -19,6 +19,7 @@ import Unit from "./Pages/Unit";
 import Lesson from "./Pages/Lesson";
 import './comments.css'
 import Subjects from "./Components/Subjects";
+import Courses from "./Pages/Courses";
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/Scheduler" element={<RoomScheduler/>}/>
         <Route path="/Unit" element={<Unit/>}/>
         <Route path="/Lesson" element={<Lesson/>}/>
+        <Route path="/Courses" element={<Courses/>}/>
 
 
         {/* <Route path="/Contact" element={<Contact/>}/> */}

@@ -35,7 +35,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="About" title="About Us" class='navTabs'>
+                  <a href="/About" title="About Us" class='navTabs'>
                     <span className="red-fox">About Us</span>
                   </a>
                 </li>
