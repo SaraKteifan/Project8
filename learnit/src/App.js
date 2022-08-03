@@ -13,6 +13,8 @@ import Profile from "./Pages/Profile";
 import RoomScheduler from "./Pages/RoomScheduler";
 import "@progress/kendo-theme-default/dist/all.css";
 import Contact from "./Pages/Contact";
+import Unit from "./Pages/Unit";
+import Lesson from "./Pages/Lesson";
 
 
 function App() {
@@ -33,6 +35,9 @@ function App() {
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/Scheduler" element={<RoomScheduler/>}/>
+        <Route path="/Unit" element={<Unit/>}/>
+        <Route path="/Lesson" element={<Lesson/>}/>
+
 
         {/* <Route path="/Contact" element={<Contact/>}/> */}
         
