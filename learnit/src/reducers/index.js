@@ -1,6 +1,5 @@
 import signUp from "./signUp";
 import login from "./login";
-import profile from "./profile";
 
 import {combineReducers} from 'redux';
 
@@ -8,8 +7,7 @@ import {combineReducers} from 'redux';
 
 const AllReducers=combineReducers({
     signUp: signUp,
-    login: login,
-    profile:profile,
+    login: login
 });
 
 export default AllReducers;

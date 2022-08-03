@@ -1,11 +1,33 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect } from 'react'
 import './profile.css'
 import {useSelector,useDispatch } from 'react-redux';
-
+import {useState} from 'react'
 
 
 function Profile() {
-  const user_data=useSelector(state=>state.profile);
+  let user_id= sessionStorage.getItem("user_info");
+  const [user_data,setUser]=useState({});
+  // const [user_data,setUserData]=useState([]);
+  // // const user_data=useSelector(state=>state.profile);
+  // // console.log(user_data);
+  // useEffect(() => {
+  //   let username=sessionStorage.getItem("username")
+  //   let email=sessionStorage.getItem("email")  
+  // });
+  // setUserData([username, email]);
+  // // let img=sessionStorage.getItem("img")
+  useEffect(() => {
+    const loadUser = async () => {
+    const response = await axios.get('http://localhost/Project9/learnit/backend/profile.php?user_id='+user_id);
+   
+
+    setUser(response.data);
+};
+
+loadUser();
+}, []);
+
 
   return (
     <div>
@@ -23,8 +45,8 @@ function Profile() {
               />
               <div className="osahan-user-media-body">
                 <h6 className="mb-2">{user_data.username}</h6>
-                <p className="mb-1">+91 85680-79956</p>
-                <p>bootdey@bootdey.com</p>
+                {/* <p className="mb-1">+91 85680-79956</p> */}
+                <p>{user_data.email}</p>
                 <p className="mb-0 text-black font-weight-bold">
                   <a
                     className="text-primary mr-3"
@@ -54,8 +76,13 @@ function Profile() {
               aria-controls="favourites"
               aria-selected="false"
             >
-              <i className="icofont-heart" /> Favorites
-            </a>
+              {/* <i className="icofont-heart" /> manage your schedule here. */}
+           
+          
+            <a href="/Scheduler" className="icon-vks">
+            <i class="fa-solid fa-calendar-days"></i>
+             your schedule 
+            </a> </a>
           </li>
         </ul>
       </div>

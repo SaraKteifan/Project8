@@ -1,7 +1,7 @@
 
-span.red-fox {
+/* span.red-fox {
     color: #fe666f;
-}
+} */
 a.btn-login {
     background: linear-gradient(to right, #ffa857, #fe5a73);
     padding: 0px 10px;
@@ -513,7 +513,8 @@ p.footer-text {
     font-size: 14px;
     color: #fff;
     text-align: start;
-    margin-top: 25px;
+    margin-top: 60px;
+    text-align: center;
 }
 span.corp-design:hover {
     opacity: 1;
@@ -1196,6 +1197,25 @@ a.btn-startgames.macosx.lf:hover {
 .ifram{
     margin-left: 8%;
     }
+    .registercontact{
+        background: linear-gradient(to right, #6cb615, #9adb01);
+    padding: 0px 10px;
+    color: #fff;
+    border-radius: 3px;
+    width: 190px;
+    height: 53px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 10px 65px 0px #ccd4e0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    transition: .5s;
+    margin: 0 auto;
+    line-height: 45px;
+    text-align: -webkit-center;
+    margin-left: 45%;
+    }
 
 #logoutBtn{
     background: url(/icons/logout.png) no-repeat;
@@ -1208,4 +1228,18 @@ a.btn-startgames.macosx.lf:hover {
 }
 #logoutBtn, #loginBtn, #joinUstBtn{
     width: 20px;
+}
+#footer-socials{
+    margin-top: 40px;
+}
+.active-tab{
+    color: #2e3338;
+    border-bottom: 3px solid #4a82e4;
+}
+.navTabs{
+    text-decoration: none;
+}
+  
+a:hover{
+    color: white;
 }

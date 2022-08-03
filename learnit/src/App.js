@@ -1,4 +1,6 @@
 import React from "react";
+import Comments from "./Components/comments/Comments";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes,BrowserRouter, Route,Link} from "react-router-dom";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
@@ -15,6 +17,8 @@ import "@progress/kendo-theme-default/dist/all.css";
 import Contact from "./Pages/Contact";
 import Unit from "./Pages/Unit";
 import Lesson from "./Pages/Lesson";
+import './comments.css'
+import Subjects from "./Components/Subjects";
 
 
 function App() {
@@ -31,7 +35,6 @@ function App() {
         <Route path="/Download" element={<Download/>}/>
         <Route path="/HowStart" element={<HowStart/>}/>
         <Route path="/About" element={<About/>}/>
-
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/Scheduler" element={<RoomScheduler/>}/>
@@ -40,6 +43,10 @@ function App() {
 
 
         {/* <Route path="/Contact" element={<Contact/>}/> */}
+        <Route path="/Subjects" element={<Subjects/>}/>
+        <Route path="/Comments" element={<Comments
+        commentsUrl="http://localhost:3004/comments"
+        currentUserId="1"/>}/>
         
       </Routes>
     </BrowserRouter>
