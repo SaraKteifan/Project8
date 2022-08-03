@@ -30,7 +30,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="/Subjects" title="Courses" class='navTabs'>
+                  <a href="/Courses" title="Courses" class='navTabs'>
                     Courses
                   </a>
                 </li>

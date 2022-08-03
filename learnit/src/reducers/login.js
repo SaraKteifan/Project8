@@ -2,7 +2,7 @@ export default function(state = {error:'',userId:''}, action){
     switch(action.type){
 
         case 'login':
-            if(action.payload !== ''){
+            if(action.payload != ''){
                 return{...state,
                     userId:action.payload,}
             }else{

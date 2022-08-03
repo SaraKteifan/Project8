@@ -19,14 +19,13 @@ function About() {
 
   return (
     <>
-    <div className='p'>About Us</div>
-    <div className='d'>We are a group of young men and women  We develop websites to meet the needs of the user <br/>We work together as a team. Our goal is always to reach the best. Our site is one of the best sites to educate students and acquire skills and experiences that help them to overcome difficulties, and we hope everyone can benefit.</div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    
-    <br/>
+    <div className='row container'>
+      <div className='col-6'>
+    <h1>About Us</h1>
+    <p>We are a group of young men and women  We develop websites to meet the needs of the user <br/>We work together as a team. Our goal is always to reach the best. Our site is one of the best sites to educate students and acquire skills and experiences that help them to overcome difficulties, and we hope everyone can benefit.</p>
+    </div>
+    <div className='col-6'>
+  <h1>Our Team</h1>
     <CardGroup>
         <Card>
           <Card.Img variant="top" src="https://cdn.discordapp.com/attachments/1000662055034048632/1003662155431804980/1.jpg" />
@@ -69,7 +68,8 @@ function About() {
          
         </Card>
       </CardGroup>
-
+      </div>
+</div>
     </>
   )
 }

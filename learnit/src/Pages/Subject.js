@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
+import {useNavigate } from "react-router-dom";
 
 
 function Download() {
   
   const sub_id = sessionStorage.getItem("sub_id");
-
+  const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [data2, setData2] = useState([]);
   const [coursesData, setCourses] = useState([]);
@@ -56,14 +57,8 @@ const getSubView = ()=> {
 }
 
 const clickHandel= (el)=>{
-  // console.log();
-  loadBlog2(el.tp_id);
-  if(coursesData.length>0){
-
-    document.getElementById("name").textContent = el.tp_name;
-    console.log(coursesData);
-  }
-  // document.getElementById("title0").textContent = el.tp_name;
+  sessionStorage.setItem('cr_id',el.tp_id);
+  navigate("/Courses", { replace: true });
 }
 const getTpName = () => {
   if ((data2 && data2.length > 0)) {
