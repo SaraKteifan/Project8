@@ -70,21 +70,7 @@ function Home() {
               {/* Add Arrows */}
             </div>
           </div>
-          <div className="col-lg-3">
-            <a href="/HowStart" className="block-s1">
-              <p className="how-to-games">How to start?</p>
-              <p className="desctops">
-            Find the way to start step by step
-              </p>
-            </a>
-            <a href="/Community" className="block-s1 p2">
-              <p className="how-to-games">LearnIt Community</p>
-              <p className="desctops">
-                {" "}
-                Be a part of LearnIt community, and share your thoughts with other students.
-              </p>
-            </a>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -173,10 +159,26 @@ function Home() {
               <span className="online-o" /> Общий онлайн: 2173
             </p>
           </div>
-          <div className="right-block vk">
+          
+          <div className="col-lg-3">
+            <a href="/HowStart" className="block-s1">
+              <p className="how-to-games">How to start?</p>
+              <p className="desctops">
+            Find the way to start step by step
+              </p>
+            </a>
+            <a href="/Community" className="block-s1 p2">
+              <p className="how-to-games">LearnIt Community</p>
+              <p className="desctops">
+                {" "}
+                Be a part of LearnIt community, and share your thoughts with other students.
+              </p>
+            </a>
+          </div>
+          {/* <div className="right-block vk">
             <div className="n-m">Мониторинг Серверов</div>
             <div className="widget-vk">WIDGET VK</div>
-          </div>
+          </div> */}
         </div>
         {/* Video starts */}
             <Video title={'About Active Learning'} url={'https://www.youtube.com/embed/Z9esoCjjUGQ'}/>

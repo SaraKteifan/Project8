@@ -1,0 +1,138 @@
+.less_title{
+    background-color: white;
+    padding: 15px;
+    font-family: system-ui;
+}
+
+.list{
+    background-color: white;
+}
+
+.nu{
+    font-size: 25px;
+    user-select: none;
+}
+
+.nc{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.overview{
+    display: block;
+    background-color: #f5f5f5;
+    padding: 7px;
+    border-bottom: .1rem solid rgba(0,0,0,.12);
+}
+
+.under{
+    padding: 5px;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: white;
+    user-select: none;
+    display: inline-block;
+    
+}
+
+.lee{
+    padding: 24px 36px; color: rgba(0, 0, 0, 0.54);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: system-ui;
+}
+
+.lee div{
+    /*display: inline-block;*/
+    float: right;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+
+.lee:hover{
+    color: black;
+    border: 1px solid rgba(0,0,0,.12);
+    cursor: pointer;
+}
+
+.chapter{
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex; 
+    align-items: center; 
+}
+
+.vedio{
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex; 
+    align-items: center; 
+}
+
+.quiz{
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex; 
+    align-items: center; 
+}
+
+.chapter:hover{
+    background-color: #d0d9e1;
+}
+
+.vedio:hover{
+    background-color: #d0d9e1;
+}
+
+.quiz:hover{
+    background-color: #d0d9e1;
+}
+
+
+
+.test{
+    border: 1px solid cadetblue;
+    user-select: none;
+    cursor: pointer;
+    width: fit-content;
+    padding: 7px;
+}
+
+.test:hover{
+    color: blue;
+}
+
+.test:active{
+    outline: 3px solid cadetblue;
+
+}
+
+.monitor{
+    text-align: center; 
+    float: right; 
+    min-height: 300px; 
+    min-width: 500px; 
+    margin: 28px 100px 0 0; 
+    border-radius: 10px; 
+    padding: 25px; 
+    background-color: white;
+}
+
+.mvedio{
+    height: 350px; 
+    width: 100%;
+}
+
+aside{
+    width: fit-content;
+}
+
+.omg{
+    display: none;
+}
