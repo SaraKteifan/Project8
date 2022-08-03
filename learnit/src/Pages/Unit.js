@@ -1,80 +1,36 @@
 import React from 'react'
 
-function HowStart() {
+function Unit() {
   return (
-    <>
-      <>
-  
-    {/* Home Section START */}
-    <span className="no-intro" />
-    {/* Home Section END */}
-    <div className="container">
+    <div>
+      <div className="container">
       <div className="row">
         <div className="col-lg-9 col-md-9">
           <span className="name-rog">
-            <div className="hr-line" /> A Roadmap for Online Course
+            <div className="hr-line" /> Unit
           </span>
-          <div className="section-how">
-            <span className="num-1">01</span>
-            <div className="reved">
-              <div className="arrow-road" />
-              <p>
-              Choose a topic that you are interested in! <br/>The research process is more relevant if you care about your topic.
-                {/* например: <span style={{ color: "#000" }}>xR3E8g1bHjLM</span> */}
+          <div className="promo-donate">
+            <div className="col-md-1 dv lv">
+              <span className="ic-love" />
+            </div>
+            <div className="col-md-10 lv">
+              <h3 className="th-name">Коротко о пожертвованиях:</h3>
+              <p className="desctop">
+                Как и все мы нуждаемся в материальной помощи. Нам необходимо
+                арендовать оборудование для игровых серверов, совершенствовать
+                старое и разрабатывать совершенно новое и необычное! Именно по
+                этим причинам мы и ввели систему пожертвований на нашем проекте.
+                <br />
+                <br />
+                За пожертвование вы получаете монеты, за которые можно
+                приобрести привилегии на наших серверах.
               </p>
+              <a href="#" className="love-donate">
+                <span className="ic-loveb" /> Пожертвовать
+              </a>
             </div>
           </div>
-          <div className="section-how">
-            <span className="num-2">02</span>
-            <div className="reved">
-              <div className="arrow-road" />
-              <p>
-                
-               You can enter the courses in the next step and you have to finish<br/> all the courses to move to the next stage.
-              </p>
-            </div>
-          </div>
-          <div className="section-how">
-            <span className="num-3">03</span>
-            <div className="reved">
-              <div className="arrow-road" />
-              <p>
-              After completing the courses, you can move on to the quizes so that you can test your knowledge that you obtained from the active learning method.
-              </p>
-            </div>
-          </div>
-          <div className="section-how">
-            <span className="num-4">04</span>
-            <div className="reved">
-              <div className="arrow-road" />
-              <p>
-              Well done! you have obtained all the badges, so we are pleased to present you with a certificate on this subject.
-              </p>
-            </div>
-          </div>
-          {/* <div className="video-block">
-            <span className="name-rog">
-              <div className="hr-line" /> About Active Learning
-            </span>
-            <div className="section-how">
-              <span className="num-video">
-                <span className="video-icons" />
-              </span>
-              <div className="reved">
-                <div className="arrow-roadx" />
-                <span className="video-center">
-                  <iframe
-                    width={703}
-                    height={315}
-                    src="https://www.youtube.com/embed/DrCUuWODgQc"
-                    frameBorder={0}
-                    allow="autoplay; encrypted-media"
-                    allowFullScreen=""
-                  />
-                </span>
-              </div>
-            </div>
-          </div> */}
+         
         </div>
         <div className="col-lg-3 col-md-3">
           <div className="right-block">
@@ -162,10 +118,8 @@ function HowStart() {
         </div>
       </div>
     </div>
-</>
-
-    </>
+    </div>
   )
 }
 
-export default HowStart
+export default Unit

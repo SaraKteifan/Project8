@@ -448,14 +448,14 @@ p {
 .server_name a {
     color: #2e3338;
     font-weight: 700;
-    margin-left: -27px;
+    margin-left: 10px;
 }
 
 .server_players {
     font-size: 12px;
     color: #9ea7b0;
     margin-top: -25px;
-    margin-left: 60px;
+    margin-left: 100px;
 }
 
 .server.online {
