@@ -3,7 +3,7 @@
 
   $id = $_REQUEST['id'];
 
-  $sql = "SELECT * FROM course WHERE tp_id = '$id'";
+  $sql = "SELECT * FROM course INNER JOIN topic on course.tp_id=topic.tp_id AND course.tp_id = '$id'";
   $sqlRun = mysqli_query($conn,$sql);
   $resultcheck = mysqli_num_rows($sqlRun);
 

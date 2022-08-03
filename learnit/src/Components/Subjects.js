@@ -21,7 +21,7 @@ function Subjects() {
     
     const clickHandel  = (id)=>{
         sessionStorage.setItem('sub_id', id);
-        navigate("/Download", { replace: true });
+        navigate("/Subject", { replace: true });
     }
 
     return (

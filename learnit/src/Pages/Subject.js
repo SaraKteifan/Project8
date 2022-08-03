@@ -57,6 +57,7 @@ const getSubView = ()=> {
 }
 
 const clickHandel= (el)=>{
+  sessionStorage.setItem('cr_id',el.tp_id);
   navigate("/Courses", { replace: true });
 }
 const getTpName = () => {

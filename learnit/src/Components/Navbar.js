@@ -1,11 +1,14 @@
 import React from 'react'
 import {useSelector,useDispatch } from 'react-redux';
 import {logout} from "../actions/index";
+import { useLocation } from 'react-router-dom'
 
 function Navbar() {
   const dispatch=useDispatch();
   let user_id= sessionStorage.getItem("user_info");
-
+  const location = useLocation();
+  console.log(location.pathname);
+  const loc= location.pathname;
   return (
     <>
       <nav id="main-nav" className="main-nav fixed">
@@ -24,22 +27,22 @@ function Navbar() {
             </div>
             <div className="nav-wrap">
               <ul id="nav" className="nav-wrap__list menu">
-                <li className="current">
+                <li className={loc=='/'?"current":''}>
                   <a href="/" title="Home" class='navTabs'>
                     Home
                   </a>
                 </li>
-                <li>
-                  <a href="/Subjects" title="Courses" class='navTabs'>
+                <li className={loc=='/Courses'?"current":''}>
+                  <a href="/Courses" title="Courses" class='navTabs'>
                     Courses
                   </a>
                 </li>
-                <li>
-                  <a href="/About" title="About Us" class='navTabs'>
+                <li className={loc=='/About'?"current":''}>
+                  <a href="About" title="About Us" class='navTabs'>
                     <span className="red-fox">About Us</span>
                   </a>
                 </li>
-                <li>
+                <li className={loc=='/Contact'?"current":''}>
                   <a href="/Contact" title="Contact Us" class='navTabs'>
                     Contact Us
                   </a>
