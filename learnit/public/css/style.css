@@ -1,7 +1,7 @@
 
-span.red-fox {
+/* span.red-fox {
     color: #fe666f;
-}
+} */
 a.btn-login {
     background: linear-gradient(to right, #ffa857, #fe5a73);
     padding: 0px 10px;
@@ -513,7 +513,8 @@ p.footer-text {
     font-size: 14px;
     color: #fff;
     text-align: start;
-    margin-top: 25px;
+    margin-top: 60px;
+    text-align: center;
 }
 span.corp-design:hover {
     opacity: 1;
@@ -1227,4 +1228,18 @@ a.btn-startgames.macosx.lf:hover {
 }
 #logoutBtn, #loginBtn, #joinUstBtn{
     width: 20px;
+}
+#footer-socials{
+    margin-top: 40px;
+}
+.active-tab{
+    color: #2e3338;
+    border-bottom: 3px solid #4a82e4;
+}
+.navTabs{
+    text-decoration: none;
+}
+  
+a:hover{
+    color: white;
 }

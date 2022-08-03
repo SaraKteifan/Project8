@@ -1,4 +1,5 @@
 import React from 'react'
+import Subjects from '../Components/Subjects'
 import Video from '../Components/Video'
 
 
@@ -76,10 +77,10 @@ function Home() {
               </p>
             </a>
             <a href="#" className="block-s1 p2">
-              <p className="how-to-games">Стать модератором</p>
+              <p className="how-to-games">LearnIt Community</p>
               <p className="desctops">
                 {" "}
-                В данном разделе вы можете купить модераторку за 900р.
+                Be a part of LearnIt community, and share your thoughts with other students.
               </p>
             </a>
           </div>
@@ -90,64 +91,7 @@ function Home() {
     <div className="container">
       <div className="row">
         <div className="col-lg-9 col-md-9">
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <span className="hot-news">HOT</span>
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
-          </div>
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <span className="new-news">NEW</span>
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
-          </div>
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
-          </div>
-          <div className="news-link">
-            <img className="poster" src="/img/post.png" />
-            <h3 className="news-log">PUBG Теперь и в майнкрафт !</h3>
-            <p className="description">
-              Встречайте новая мини-игра PUBG теперь и на нашем сервере в
-              майнкрафт ! По традиции нашим первым шагом будет ознакомление с
-              правилами и регистрация аккаунта. Будьте внимательны при чтении
-              правил нашего проекта, незнание их не освобождает вас от...
-            </p>
-            <a href="#" className="btn-view">
-              <span className="ic-sx24" /> Подробнее
-            </a>
-            <span className="time-data">18.05.18 12:42</span>
-          </div>
+         <Subjects/>
         </div>
         <div className="col-lg-3 col-md-3">
           <div className="right-block">

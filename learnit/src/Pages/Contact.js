@@ -159,7 +159,7 @@ const notification = ()=>{
             id="sendMessageButton"
             onClick={()=>notification()}
             >
-             Supmite
+             Submit
             </a>
             
           </div>

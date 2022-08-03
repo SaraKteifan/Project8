@@ -48,18 +48,3 @@ export const logout=()=> async dispatch => {
             type: 'logout'
         })
 }
-
-export const profile =(user_id)=>  async dispatch =>{try{
-    const res = await axios.get('http://localhost/Project9/learnit/backend/profile.php?user_id='+user_id);
-    dispatch( {
-        type: 'profile',
-        payload: res.data,
-    })
-
-}
-catch(e){
-    dispatch( {
-        type: 'profileError',
-        payload: console.log(e),
-    })
-}}

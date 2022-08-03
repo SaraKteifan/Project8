@@ -18,25 +18,25 @@ function Footer() {
               © LearnIt 2022 - All rights reserved.
             </p>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4" id='footer-socials'>
             <ul className="ft-nav social-nav my-3">
               <li className="mx-1">
-                <a href="javascript:void(0);" title="github">
+                <a href="https://github.com/SaraKteifan/Project9" title="github" target='_blanck'>
                   <i className="fa fa-github" />
                 </a>
               </li>
               <li className="mx-1">
-                <a href="javascript:void(0);" title="twitter">
+                <a href="https://twitter.com/Learnit_World?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="twitter"  target='_blanck'>
                   <i className="fa fa-twitter" />
                 </a>
               </li>
               <li className="mx-1">
-                <a href="javascript:void(0);" title="facebook">
+                <a href="https://web.facebook.com/learnitworld?_rdc=1&_rdr" title="facebook" target='_blanck'>
                   <i className="fa fa-facebook" />
                 </a>
               </li>
               <li className="mx-1">
-                <a href="javascript:void(0);" title="instagram">
+                <a href="https://www.instagram.com/learnit.ir/?hl=en" title="instagram"  target='_blanck'>
                   <i className="fa fa-instagram" />
                 </a>
               </li>

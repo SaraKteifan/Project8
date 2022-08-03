@@ -1,7 +1,6 @@
 import React from 'react'
 import {useSelector,useDispatch } from 'react-redux';
 import {logout} from "../actions/index";
-import {profile} from "../actions/index";
 
 function Navbar() {
   const dispatch=useDispatch();
@@ -14,7 +13,7 @@ function Navbar() {
         <div className="row">
           <div className="col-12">
             <div className="nav-header d-flex justify-content-between align-items-center">
-              <a href="index.html" className="logo" title="LOGO">
+              <a href="/" className="logo" title="LOGO">
                 <img className="logo-img" src="../img/logo.png" alt="LOGO" />
                 <img
                   className="alt-logo-img"
@@ -26,22 +25,22 @@ function Navbar() {
             <div className="nav-wrap">
               <ul id="nav" className="nav-wrap__list menu">
                 <li className="current">
-                  <a href="/" title="Home">
+                  <a href="/" title="Home" class='navTabs'>
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/" title="Courses">
+                  <a href="/Subjects" title="Courses" class='navTabs'>
                     Courses
                   </a>
                 </li>
                 <li>
-                  <a href="About" title="About Us">
+                  <a href="About" title="About Us" class='navTabs'>
                     <span className="red-fox">About Us</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/Contact" title="Contact Us">
+                  <a href="/Contact" title="Contact Us" class='navTabs'>
                     Contact Us
                   </a>
                 </li>
@@ -66,7 +65,7 @@ function Navbar() {
                 </div>
               </ul>
               <div className="riglt-floats-xs">
-                {user_id &&<a href='/Profile' className="btn-login" onClick={()=> dispatch(profile(user_id))}>
+                {user_id &&<a href='/Profile' className="btn-login">
                   <span className="ic-sx21" /> Profile
                 </a>}
                 {user_id &&
