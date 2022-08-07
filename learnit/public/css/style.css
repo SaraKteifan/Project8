@@ -218,6 +218,8 @@ a.block-s1.p2 {
 img.poster {
     float: left;
     width: 30%;
+    height: 30vh;
+    margin-right: 5%;
 }
 
 .news-link {

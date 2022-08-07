@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Units.css'
+import axios from 'axios';
 
 function Units() {
+    const [unit, setUnit] = useState([]);
+    useEffect(() => {
+        const loadCourses = async () => {
+            const response = await axios.get('http://localhost/learnit/Project9/learnit/API/selectUnit.php?id='+sessionStorage.getItem('un_id'));
+            setUnit(response.data);
+            console.log(response.data);
+        };
+        loadCourses();
+    }, []);
+
+    const getData = ()=> {
+        if ((unit && unit.length > 0)) {
+          return unit[0].cr_name
+        }else{
+            console.log("Loading...")
+        }
+      }
+
     return (
         <>
             <div className="main" id="main">
                 <div style={{ marginBottom: 60 }}>
                     <div className="course1" id="course1">
                         <h1 className="title" id="title">
-                            Introduction to Cosmetic Formulation and Technology
+                            dkvdkv{getData()}
                         </h1>
                         <p className="goal" id="goal">
                             explain what the main factor is that legally differentiates cosmetics

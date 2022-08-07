@@ -21,6 +21,7 @@ import './comments.css'
 import Subjects from "./Components/Subjects";
 import Community from "./Pages/Community";
 import Courses from "./Pages/Courses";
+import Post from "./Pages/Post";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/Community" element={<Community/>}/>
         <Route path="/Courses" element={<Courses/>}/>
         <Route path="/Units" element={<Units/>}/>
+        <Route path="/Post" element={<Post/>}/>
 
         {/* <Route path="/Contact" element={<Contact/>}/> */}
         <Route path="/Subjects" element={<Subjects/>}/>

@@ -55,10 +55,10 @@ function Navbar() {
                     <span className="arrow_box" />
                     <ul className="drop-vape">
                       <li>
-                        <a href="#">Банлист</a>
+                        <a href="/Community">Community</a>
                       </li>
                       <li>
-                        <a href="#">Банлист</a>
+                        <a href="/HowStart">How to start</a>
                       </li>
                       <li>
                         <a href="#">Банлист</a>
